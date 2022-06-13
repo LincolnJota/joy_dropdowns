@@ -85,7 +85,7 @@ These are all settings, but it goes from imagination to creating the other overl
 - - `child` – This is the hoverable button widget, it can be anything, a custom container, an ElevatedButton...
 
 
-## JoyMenu - Fancy Lists
+## JoyMenu - Fast & Elegant list
 
 If you want to add only one list and be happy,  there is a factory method 
 called "JoyDropDown.list", see:
