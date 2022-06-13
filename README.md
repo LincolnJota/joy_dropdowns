@@ -1,7 +1,7 @@
 <br />
 <h1 align="center">Joy Dropdowns</h1>
 
-<p align="center">A beautiful package to create controls with properties equivalent to web Dropdown quickly and customizable. <a href="https://blog.codemagic.io/flutter-libraries-ebook-by-codemagic/ebook-flutter-libraries-we-love-by-codemagic.pdf">see a live preview</a></p>
+<p align="center">A beautiful package to create controls with properties equivalent to web Dropdown quickly and customizable. <a href="#">see a live preview</a></p>
 
 # Installing
 
