@@ -1,7 +1,7 @@
 <br />
 <h1 align="center">Joy Dropdowns</h1>
 
-<p align="center">A beautiful package to create controls with properties equivalent to web Dropdown quickly and customizable. <a href="#">see a live preview</a></p>
+<p align="center">A beautiful package to create controls with properties equivalent to web Dropdown quickly and customizable. <a href="https://lincolnjota.github.io/dropdowns-example/#/">see a live preview</a></p>
 
 # Installing
 
