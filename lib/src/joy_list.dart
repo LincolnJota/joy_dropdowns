@@ -7,13 +7,23 @@ class JoyMenu extends StatefulWidget {
   final Color? defaultColor;
   final BoxDecoration? menuDecoration;
 
-  const JoyMenu(
-      {Key? key,
-      required this.items,
-      this.hoverColor,
-      this.defaultColor,
-      this.menuDecoration})
-      : super(key: key);
+  /// It is a meth to make beautiful lists, and fast, without the need to configure many decorations.
+  /// Widget that can be set in the ``menu`` property of the
+  /// ```dart
+  /// JoyDropDown.list(menu: JoyMenu(...), ...)
+  /// ```
+  /// Here are some possible settings:
+  /// * ``menuDecoration``: The decoration of the menu. (Its a Container)
+  /// * ``hoverColor``: The color of the menu when the mouse is over it.
+  /// * ``defaultColor``: The color of the menu when the mouse is not over it.
+  /// * ``items``: A list that should be of type List<JoyMenuItem>...
+  const JoyMenu({
+    Key? key,
+    required this.items,
+    this.hoverColor,
+    this.defaultColor,
+    this.menuDecoration,
+  }) : super(key: key);
 
   @override
   State<JoyMenu> createState() => _JoyMenuState();
@@ -85,15 +95,17 @@ class _JoyMenuState extends State<JoyMenu> {
 }
 
 class JoyMenuItem {
+  /// It's like listile, only it has the properties a navMenu needs!
+  /// * ``icon``: The icon of the menu item.
+  /// * ``title``: The title of the menu item.
+  /// * ``onTap``: The function that will be called when the menu item is tapped.
   JoyMenuItem({
     required this.icon,
     required this.title,
-    this.subtitle,
     required this.onTap,
   });
 
   final Icon icon;
   final Text title;
-  final Text? subtitle;
   final void Function() onTap;
 }

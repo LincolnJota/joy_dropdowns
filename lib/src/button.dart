@@ -5,8 +5,6 @@ import 'overlay.dart';
 import 'enums.dart';
 
 class JoyDropDown extends StatefulWidget {
-  //final void Function(JoyDropdownState event)? onHover;
-
   final Widget child;
   final Widget overlayWidget;
   final JoyOverlayPosition? overlayPosition;
@@ -15,7 +13,14 @@ class JoyDropDown extends StatefulWidget {
   final double? overlayHeight;
   final UniqueKey uniqueKey = UniqueKey();
 
-  /// If you don't enter this parameter, whatever is inside the constructor will assume the size of the button.
+  /// ## JoyDropDown
+  /// Creates a widget that has your child as a "hoverable" Here are some properties available:
+  /// - ``overlayWidget``: Widget you want to appear at the time of hovering over the mouse..
+  /// - ``overlayPosition``: Position of the overlayWidget. Default is JoyOverlayPosition.bottom.
+  /// - ``overlayOffset``: Offset of the overlayWidget. Default is Offset(0, 0).
+  /// - ``overlayWidth``: If this parameter is not set, it will be the same as the child width.
+  /// - ``overlayHeight``: If this parameter is not set, it will be the same as the child height.
+  /// - ``child``: Widget that will be hovered. better known as button.
   // ignore: use_key_in_widget_constructors
   JoyDropDown({
     required this.child,
@@ -26,6 +31,14 @@ class JoyDropDown extends StatefulWidget {
     this.overlayHeight,
   });
 
+  /// ## JoyDropDown.list
+  /// Creates a widget that has your child as a "hoverable" Here are some properties available:
+  /// - ``menu``: Widget you want to appear at the time of hovering over the mouse..
+  /// - ``overlayPosition``: Position of the overlayWidget. Default is JoyOverlayPosition.bottom.
+  /// - ``overlayOffset``: Offset of the overlayWidget. Default is Offset(0, 0).
+  /// - ``overlayWidth``: If this parameter is not set, it will be the same as the child width.
+  /// - ``overlayHeight``: If this parameter is not set, it will be the same as the child height.
+  /// - ``child``: Widget that will be hovered. better known as button.
   factory JoyDropDown.list({
     required JoyOverlayPosition overlayPosition,
     required JoyMenu menu,
@@ -58,11 +71,6 @@ class _JoyDropDownState extends State<JoyDropDown> {
         if (closeTimer != null) {
           closeTimer!.cancel();
         }
-
-        // print('================');
-        // print(widget.uniqueKey);
-        // print(currentChildKey);
-        // print('================');
 
         if (!isMenuShowing || widget.uniqueKey != currentChildKey) {
           if (overlayEntry != null) {
