@@ -1,6 +1,6 @@
 name: joy_dropdowns
 description: A package to create dropdowns buttons with the hover property quickly.
-version: 1.0.0
+version: 1.0.0+1
 homepage: 'https://github.com/LincolnJota/'
 
 environment:

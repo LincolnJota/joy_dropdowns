@@ -11,7 +11,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  joy_dropdowns: ^1.0.0
+  joy_dropdowns: ^1.0.0+1
 ```
 
 ### 2. Install it
