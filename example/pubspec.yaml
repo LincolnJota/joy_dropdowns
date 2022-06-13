@@ -27,7 +27,7 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  joy_dropdown:
+  joy_dropdowns:
     path: ../
   flutter:
     sdk: flutter

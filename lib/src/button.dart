@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:joy_dropdown/src/joy_list.dart';
+import 'joy_list.dart';
 import 'close_menu.dart';
 import 'overlay.dart';
 import 'enums.dart';
