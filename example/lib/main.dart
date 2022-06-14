@@ -203,15 +203,17 @@ class _HomePageState extends State<HomePage> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                     ),
-                    child: Image.network(
-                        'https://magiagifs.com.br/wp-content/uploads/2019/08/gifs-engracados-animais3-1.gif',
-                        fit: BoxFit.cover,
-                        width: 200,
-                        height: 200),
+                    child: Image.asset(
+                      'assets/cavalo-meme.gif',
+                      fit: BoxFit.cover,
+                      width: 200,
+                      height: 200,
+                    ),
                   ),
                   child: const ExampleButton(
-                      text: 'or this',
-                      color: Color.fromARGB(255, 180, 127, 108)),
+                    text: 'or this',
+                    color: Color.fromARGB(255, 180, 127, 108),
+                  ),
                 ),
               ],
             ),
